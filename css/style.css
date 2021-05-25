@@ -13,7 +13,9 @@ nav {
   min-height: 5vh;
   
 }
-nav h2 {
+nav p {
+  font-weight: bold;
+  font-size: 1rem;
   text-align: center;
   padding: 1rem;
   color: white;
@@ -27,10 +29,9 @@ main {
 }
 
 .flex-container {
+  min-width: 30vw;
   padding-top: 5rem;
-  width: 30vw;
   display: flex;
-
   flex-direction: column;
 }
 
@@ -51,7 +52,41 @@ main {
   
 }
 .result-title {
-  color: #008000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #80006b;
   margin-bottom: 1rem;
   text-transform: uppercase;
+}
+
+#result {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .result-title {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #80006b;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  .flex-container {
+    padding-top: 5rem;
+    width: 30vw;
+    display: flex;
+  
+    flex-direction: column;
+  }
+  #result {
+    font-size: 2rem;
+  }
+
+  nav p {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
 }
